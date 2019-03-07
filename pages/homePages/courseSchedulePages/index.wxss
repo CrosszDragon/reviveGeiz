@@ -1,0 +1,73 @@
+/* index.wxss */
+@import "../template/schedule.wxss";
+/*顶部css*/
+.top{
+  width: 100%;
+  background-color:rgb(218, 54, 233);
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.top .right{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+.right .back_icon{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 20rpx 5rpx 20rpx 20rpx;
+}
+.top .center{
+  font-size: 40rpx;
+  letter-spacing: 10rpx;
+}
+/*end-顶部css*/
+
+/*学年*/
+.semester{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: beige;
+}
+.semester image{
+  width: 30rpx;
+  height: 30rpx;
+  margin: 10rpx;
+}
+.semester .user_info{
+  display: inline-flex;
+  flex-direction: row;
+  font-size: 35rpx;
+  margin: 10rpx;
+}
+.semester .change_semester{
+  font-weight: bold;
+  margin-left: 20rpx;
+  font-family: "微软雅黑";
+}
+/*end-学年*/
+
+/*切换栏*/
+.switchOption{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+.icon{
+  background: palevioletred;
+}
+.icon .img{
+  width: 60rpx;
+  height: 60rpx;
+  margin: 15rpx;
+}
+.tab .content{
+  padding: 20rpx;
+  border: 4rpx solid black;
+}
+/*end-切换栏*/
+

@@ -1,0 +1,22 @@
+<template name='info_bar'>
+<!--顶部课程表栏-->
+<view class='top'>
+  <view class='right'>
+    <image class='back_icon' src='../../icons/课表.png'></image>
+  </view>
+  <view class='center'>我的考勤</view>
+  <image src='../../icons/i.png' class='left' style='width:45rpx;height:45rpx;margin:20rpx'></image>
+</view>
+<!--end-顶部课程表栏-->
+
+<!--学年用户信息栏-->
+<view class='semester'>
+  <image src='../../icons/信息.png'></image>
+  <view class='user_info'>
+    <view>{{info_bar_content[1].year}}</view><view>年</view><view>{{info_bar_content[1].season}}</view><view>季       -</view><view>{{info_bar_content[0].name}}</view><view>({{info_bar_content[0].id}})</view>
+  </view>
+</view>
+<!--end-学年用户信息栏-->
+
+<!--end-成绩查询框架-->
+</template>

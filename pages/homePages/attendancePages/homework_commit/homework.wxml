@@ -1,0 +1,36 @@
+<!--homework_commit/homework.wxml-->
+<import src='../../template/info_bar.wxml'/>
+
+<!--顶部信息栏-->
+<template is='info_bar' data="{{info_bar_content:info_bar_content}}"></template>
+
+<!--下拉菜单-->
+<view class='drop_down_menu' wx:for="{{homework_content}}">
+
+  <view class='drop_down_button' bindtap='show_grade' id='{{index}}'>
+    <image style='margin-left:40rpx' src='../../icons/成绩.png'></image>  
+    <view>{{item.name}}</view>
+    <image style='margin-right:40rpx' src='../../icons/下拉.png'></image>
+  </view>
+
+  <view class='last_grade' style="{{item.extraStyle}}">
+
+        <view class='grade_info'>
+           <view class="table">
+             <view class="tr">
+                <view class="th th1">作业</view>
+                <view class="th th2">提交情况</view>
+                <view class='th th3'>分数</view>
+              </view>
+              <view class="tr" wx:for="{{item.content}}">
+                <view class="td td1">第{{index+1}}次作业</view>
+                <view class="td td2">{{item.attendance}}</view>    
+                <view class='td td3'>{{item.score}}</view>           
+              </view>
+            </view>
+        </view>
+
+  </view>
+    
+</view>
+

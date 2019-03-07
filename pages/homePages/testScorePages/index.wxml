@@ -1,0 +1,36 @@
+<!--顶部课程表栏-->
+<view class='top'>
+  <view class='right'>
+    <image class='back_icon' src='../icons/课表.png'></image>
+  </view>
+  <view class='center'>成绩查询</view>
+  <image src='../icons/i.png' class='left' style='width:45rpx;height:45rpx;margin:20rpx'></image>
+</view>
+<!--end-顶部课程表栏-->
+
+<!--学年用户信息栏-->
+<view class='semester'>
+  <image src='../icons/信息.png'></image>
+  <view class='user_info'>
+    <view>{{year}}</view><view>年</view><view>{{season}}</view><view>季       -</view><view>{{user.name}}</view><view>({{user.id}})</view>
+  </view>
+</view>
+<!--end-学年用户信息栏-->
+
+<!--成绩查询框架-->
+<view class='test_sqarql_frame' wx:for="{{sqaral_data}}">
+  
+  <view class='sqarql' bindtap='go_saqral_{{index}}'>
+    <view class='icon_word'>
+      <image src='../icons/考勤.png'></image>
+      <view>{{item.title}}</view>
+    </view>
+    <image src='../icons/右 .png' ></image>
+  </view>
+
+</view>
+<!--end-成绩查询框架-->
+
+
+
+

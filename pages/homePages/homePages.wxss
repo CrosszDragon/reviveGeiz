@@ -1,0 +1,64 @@
+/* pages/homePages/homePages.wxss */
+
+/*顶部夜间模式邮件*/
+.top{
+  width: 100%;
+}
+.top-img{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: space-between;
+}
+.top-img image{
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  margin: 20rpx;
+}
+/*end-顶部夜间模式邮件*/
+
+/*个人信息*/
+.header{
+  width: 100%;
+}
+#featurehead{
+  width: 120rpx;
+  height: 120rpx;
+  float: left;
+  margin: 20rpx 40rpx;
+  border-radius: 25px;
+}
+.description{
+  display: inline-block;
+  margin: 20rpx auto;
+  height: 120rpx;
+}
+.description .item {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    font-size: 30rpx;
+}
+/*end-个人信息*/
+
+/*功能列表*/
+.tablist{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tablist .content{
+  margin-top: 50rpx;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.tablist .img{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 20rpx;
+  float: left;
+}
+/*end-功能列表*/

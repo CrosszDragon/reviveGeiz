@@ -1,0 +1,8 @@
+{
+  "pages": [
+    "index",
+    "academic_year/academic",
+    "past_year/past_year",
+    "foreign_test/foreign_test"
+  ]
+}

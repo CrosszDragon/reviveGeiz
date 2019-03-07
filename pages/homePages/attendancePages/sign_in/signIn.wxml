@@ -1,0 +1,32 @@
+<import src='../../template/info_bar.wxml'/>
+
+<!--顶部信息栏-->
+<template is='info_bar' data="{{info_bar_content:info_bar_content}}"></template>
+
+<!--下拉菜单-->
+<view class='drop_down_menu' wx:for="{{signIn_content}}">
+
+  <view class='drop_down_button' bindtap='show_grade' id='{{index}}'>
+    <image style='margin-left:40rpx' src='../../icons/成绩.png'></image>  
+    <view>{{item.name}}</view>
+    <image style='margin-right:40rpx' src='../../icons/下拉.png'></image>
+  </view>
+
+  <view class='last_grade' style="{{item.extraStyle}}">
+
+        <view class='grade_info'>
+           <view class="table">
+             <view class="tr">
+                <view class="th th1">课堂</view>
+                <view class="th th2">是否签到</view>
+              </view>
+              <view class="tr" wx:for="{{item.content}}">
+                <view class="td td1">第{{index+1}}次课堂</view>
+                <view class="td td2">{{item}}</view>               
+              </view>
+            </view>
+        </view>
+
+  </view>
+    
+</view>

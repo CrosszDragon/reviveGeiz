@@ -1,0 +1,48 @@
+/*顶部css*/
+.top{
+  width: 100%;
+  background-color:rgb(126, 238, 62);
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.top .right{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+.right .back_icon{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 20rpx 5rpx 20rpx 20rpx;
+}
+.top .center{
+  font-size: 40rpx;
+  letter-spacing: 10rpx;
+  color: white;
+  font-weight: 800;
+}
+/*end-顶部css*/
+
+/*学年*/
+.semester{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+  width: 100%;
+}
+.semester image{
+  width: 30rpx;
+  height: 30rpx;
+  margin: 10rpx;
+}
+.semester .user_info{
+  display: inline-flex;
+  flex-direction: row;
+  font-size: 35rpx;
+  margin: 10rpx;
+}
+/*end-学年*/

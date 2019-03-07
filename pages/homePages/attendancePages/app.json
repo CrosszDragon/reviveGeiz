@@ -1,0 +1,7 @@
+{
+  "pages": [
+    "attendence/attendence",
+    "sign_in/signIn",
+    "homework_commit/homework"
+  ]
+}

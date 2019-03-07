@@ -1,0 +1,74 @@
+/* index.wxss */
+/*顶部css*/
+.top{
+  width: 100%;
+  background-color:rgb(248, 252, 26);
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.top .right{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+.right .back_icon{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 20rpx 5rpx 20rpx 20rpx;
+}
+.top .center{
+  font-size: 40rpx;
+  letter-spacing: 10rpx;
+  color: white;
+  font-weight: 800;
+}
+/*end-顶部css*/
+
+/*学年*/
+.semester{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+  width: 100%;
+}
+.semester image{
+  width: 30rpx;
+  height: 30rpx;
+  margin: 10rpx;
+}
+.semester .user_info{
+  display: inline-flex;
+  flex-direction: row;
+  font-size: 35rpx;
+  margin: 10rpx;
+}
+/*end-学年*/
+
+/*成绩查询框架*/
+.test_sqarql_frame{
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx;
+  border-radius: 5rpx;
+}
+.test_sqarql_frame .sqarql{
+  display: inline-flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 15rpx;
+  border: 2rpx solid gainsboro;
+}
+.test_sqarql_frame image{
+  width: 40rpx;
+  height: 40rpx;
+  margin: 10rpx;
+}
+.sqarql .icon_word{
+  display: inline-flex;
+  align-items: center;
+}
+/*end-成绩查询框架*/

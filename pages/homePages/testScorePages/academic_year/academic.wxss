@@ -1,0 +1,44 @@
+/* academic_year/academic.wxss */
+@import "../index.wxss";
+
+.grade_info{
+  position: absolute;
+  width: 668rpx;
+  height: 578rpx;
+  left: 50%;
+  margin-left: -334rpx;
+}
+/* 表格代码   */
+.table{
+  border:1px solid #dadada;
+  border-right:0;
+  border-bottom: 0;
+  width: 98%;
+  margin-left: 1%;
+}
+.tr{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+.th,.td{
+  padding: 10px;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  text-align: center;
+  width: 100%;
+}
+.th1,.th2,th3,th4,th5,.td1,td2,td3,td4,td5{
+  width:20%;
+}
+
+.th{
+  font-weight: 800;
+  background-color: #f7d84e;
+  font-size: 40rpx;
+  color: #330e0e;
+}
+.td{
+  font-size: 35rpx;
+  color: #383534;
+}

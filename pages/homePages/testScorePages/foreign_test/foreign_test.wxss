@@ -1,0 +1,42 @@
+/* foreign_test/foreign_test.wxss */
+@import "../index.wxss";
+
+.foreign_info{
+  width: 100%;
+  height: 578rpx;
+}
+/* 表格代码   */
+.table{
+  border:1px solid #dadada;
+  border-right:0;
+  border-bottom: 0;
+  width: 98%;
+  margin-left: 1%;
+}
+.tr{
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+}
+.th,.td{
+  padding: 10px;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  text-align: center;
+  width: 100%;
+}
+.th1,.th2,th3,th4,.td1,td2,td3,td4{
+  width:20%;
+}
+
+.th{
+  font-weight: 800;
+  background-color: #f7d84e;
+  font-size: 40rpx;
+  color: #330e0e;
+}
+.td{
+  font-size: 35rpx;
+  color: #383534;
+}
+/*end-表格*/

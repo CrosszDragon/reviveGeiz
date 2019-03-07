@@ -1,0 +1,141 @@
+<!--课表-->
+<template name='tab1'>
+  <view class='schedule' wx:for="{{schedule[0]}}">
+    <view class='index' >{{item.index}}</view>
+    <view class='sche_content'>
+      <view class='course' style="border:3rpx solid gainsboro ;width:100%">{{item.course}}</view>
+      <view class='content_bottom'>
+        <view class='bottom_item' >{{item.start_time}}</view>
+        <view class='bottom_item'>{{item.end_time}}</view>
+        <view class='bottom_item' style="flex-grow:2">{{item.address}}</view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<template name='tab2'>
+  <view class='schedule' wx:for="{{schedule[1]}}">
+    <view class='index' >{{item.index}}</view>
+    <view class='sche_content'>
+      <view class='course' style="border:3rpx solid gainsboro ;width:100%">{{item.course}}</view>
+      <view class='content_bottom'>
+        <view class='bottom_item' >{{item.start_time}}</view>
+        <view class='bottom_item'>{{item.end_time}}</view>
+        <view class='bottom_item' style="flex-grow:2">{{item.address}}</view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<template name='tab3'>
+  <view class='schedule' wx:for="{{schedule[2]}}">
+    <view class='index' >{{item.index}}</view>
+    <view class='sche_content'>
+      <view class='course' style="border:3rpx solid gainsboro ;width:100%">{{item.course}}</view>
+      <view class='content_bottom'>
+        <view class='bottom_item' >{{item.start_time}}</view>
+        <view class='bottom_item'>{{item.end_time}}</view>
+        <view class='bottom_item' style="flex-grow:2">{{item.address}}</view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<template name='tab4'>
+  <view class='schedule' wx:for="{{schedule[3]}}">
+    <view class='index' >{{item.index}}</view>
+    <view class='sche_content'>
+      <view class='course' style="border:3rpx solid gainsboro ;width:100%">{{item.course}}</view>
+      <view class='content_bottom'>
+        <view class='bottom_item' >{{item.start_time}}</view>
+        <view class='bottom_item'>{{item.end_time}}</view>
+        <view class='bottom_item' style="flex-grow:2">{{item.address}}</view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<template name='tab5'>
+  <view class='schedule' wx:for="{{schedule[4]}}">
+    <view class='index' >{{item.index}}</view>
+    <view class='sche_content'>
+      <view class='course' style="border:3rpx solid gainsboro ;width:100%">{{item.course}}</view>
+      <view class='content_bottom'>
+        <view class='bottom_item' >{{item.start_time}}</view>
+        <view class='bottom_item'>{{item.end_time}}</view>
+        <view class='bottom_item' style="flex-grow:2">{{item.address}}</view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<template name='tab6'>
+  <view class='schedule' wx:for="{{schedule[5]}}">
+    <view class='index' >{{item.index}}</view>
+    <view class='sche_content'>
+      <view class='course' style="border:3rpx solid gainsboro ;width:100%">{{item.course}}</view>
+      <view class='content_bottom'>
+        <view class='bottom_item' >{{item.start_time}}</view>
+        <view class='bottom_item'>{{item.end_time}}</view>
+        <view class='bottom_item' style="flex-grow:2">{{item.address}}</view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<template name='tab7'>
+  <view class='schedule' wx:for="{{schedule[6]}}">
+    <view class='index' >{{item.index}}</view>
+    <view class='sche_content'>
+      <view class='course' style="border:3rpx solid gainsboro ;width:100%">{{item.course}}</view>
+      <view class='content_bottom'>
+        <view class='bottom_item' >{{item.start_time}}</view>
+        <view class='bottom_item'>{{item.end_time}}</view>
+        <view class='bottom_item' style="flex-grow:2">{{item.address}}</view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<template name='tab8'>
+  <view class='schedule' wx:for="{{schedule[7]}}">
+    <view class='index' >{{item.index}}</view>
+    <view class='sche_content'>
+      <view class='course' style="border:3rpx solid gainsboro ;width:100%">{{item.course}}</view>
+      <view class='content_bottom'>
+        <view class='bottom_item' >{{item.start_time}}</view>
+        <view class='bottom_item'>{{item.end_time}}</view>
+        <view class='bottom_item' style="flex-grow:2">{{item.address}}</view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<template name='tab9'>
+  <view class='schedule' wx:for="{{schedule[8]}}">
+    <view class='index' >{{item.index}}</view>
+    <view class='sche_content'>
+      <view class='course' style="border:3rpx solid gainsboro ;width:100%">{{item.course}}</view>
+      <view class='content_bottom'>
+        <view class='bottom_item' >{{item.start_time}}</view>
+        <view class='bottom_item'>{{item.end_time}}</view>
+        <view class='bottom_item' style="flex-grow:2">{{item.address}}</view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<template name='tab10'>
+  <view class='schedule' wx:for="{{schedule[9]}}">
+    <view class='index' >{{item.index}}</view>
+    <view class='sche_content'>
+      <view class='course' style="border:3rpx solid gainsboro ;width:100%">{{item.course}}</view>
+      <view class='content_bottom'>
+        <view class='bottom_item' >{{item.start_time}}</view>
+        <view class='bottom_item'>{{item.end_time}}</view>
+        <view class='bottom_item' style="flex-grow:2">{{item.address}}</view>
+      </view>
+    </view>
+  </view>
+</template>
+<!--end-课表-->

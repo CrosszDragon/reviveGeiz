@@ -1,0 +1,42 @@
+<!--顶部课程表栏-->
+<import src="../template/schedule.wxml"/>
+
+<view class='top'>
+  <view class='right'>
+    <image class='back_icon' src='../icons/课表.png'></image>
+  </view>
+  <view class='center'>课程表</view>
+  <image src='../icons/i.png' class='left' style='width:45rpx;height:45rpx;margin:20rpx'></image>
+</view>
+<!--end-顶部课程表栏-->
+
+<!--学年用户信息栏-->
+<view class='semester'>
+  <image src='../icons/信息.png'></image>
+  <view class='user_info'>
+    <view>{{year}}</view><view>年</view><view>{{season}}</view><view>季       -</view><view>{{user.name}}</view><view>({{user.id}})</view>
+  </view>
+  <view class='change_semester'>切换学期</view>
+</view>
+<!--end-学年用户信息栏-->
+
+<!--切换栏-->
+<view class='switchOption'>
+  <view class='icon'>
+    <image src='../icons/左.png' class='img'></image>
+  </view>
+  
+  <view class='tab' wx:for="{{switchOption}}" wx:for-index="idx" 
+  bindtap='touchTab' style='{{item.extraStyle}}' id='{{idx}}'>
+    <view class='content' style="{{highLightIndex==idx ? 'color:white;background-color:palevioletred' : 'color:palevioletred'}}">{{item.week}}</view>
+  </view>
+
+  <view class='icon'>
+    <image src='../icons/右 .png' class='img'></image>
+  </view>
+</view>
+<!--end-切换栏-->
+
+<template is="{{currentTab}}" data="{{schedule:schedule}}"></template>
+
+

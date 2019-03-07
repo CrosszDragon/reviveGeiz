@@ -1,0 +1,48 @@
+<!--pages/homePages/homePages.wxml-->
+<view style='background-color: seashell;'>
+<!--全屏模式框-->
+
+  <view style="background-image:url('http://thyrsi.com/t6/676/1551516794x2890149512.jpg')">
+
+  <view class='top'>
+  <!--顶部夜间模式与邮件-->
+    <text style="float:left;margin-top:30rpx;margin-left:16rpx;font-size:30rpx;">lab1</text>
+    <span class='top-img' >
+    <image mode="aspectFill" src="../../image/icons/月亮.png"></image>
+    <image mode="aspectFill" src="../../image/icons/邮件.png"></image>
+    </span>
+  <!--end-顶部夜间模式与邮件-->
+  </view>
+
+  <view class='header'>
+  <!--个人信息：头像、个人信息-->
+    <image src='../../image/me.JPG' mode='aspectFill' id='featurehead'></image>
+    <view class='description'>
+      <view class='item'>
+        <view style="margin-right:10rpx">小小飞侠</view>
+        <view>♂</view>
+      </view>
+      <view class='item'>
+        <view style='margin-right:10rpx'>学习时长</view><view>{{learning_time}}</view>
+        <view style='margin-left:10rpx'>小时</view>
+        <view style='margin-left:30rpx;margin-right:30rpx'>经验</view><view>{{experience}}</view>
+      </view>
+    </view>
+  <!--个人信息：头像、个人信息-->
+  </view>
+
+ </view>
+
+  <view class='tablist'>
+  <!--功能列表-->
+      <view wx:for="{{tabs}}" class='tab' >
+            <view class='content' bindtap='transe_course' id='{{index}}'>
+              <image class='img' mode='aspectFit' src="{{item.icon}}"></image>
+              <view style='margin-left:50rpx;'>{{item.title}}</view>
+            </view>
+          </view>
+  <!--end-功能列表-->
+  </view>
+
+<!--end-全屏模式框-->
+</view>

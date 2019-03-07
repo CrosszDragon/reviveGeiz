@@ -1,0 +1,19 @@
+<!--attendence.wxml-->
+<import src='../../template/info_bar.wxml'/>
+
+<!--顶部信息栏-->
+<template is='info_bar' data="{{info_bar_content:info_bar_content}}"></template>
+
+<!--成绩查询框架-->
+<view class='test_sqarql_frame' wx:for="{{sqaral_data}}">
+  
+  <view class='sqarql' bindtap='go_saqral_{{index}}'>
+    <view class='icon_word'>
+      <image src='../../icons/考勤.png'></image>
+      <view>{{item.title}}</view>
+    </view>
+    <image src='../../icons/右 .png' ></image>
+  </view>
+
+</view>
+<!--end-成绩查询框架-->

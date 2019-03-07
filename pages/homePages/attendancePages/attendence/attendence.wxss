@@ -1,0 +1,27 @@
+/* attendence.wxss */
+@import '../../template/info_bar.wxss';
+
+/*成绩查询框架*/
+.test_sqarql_frame{
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx;
+  border-radius: 5rpx;
+}
+.test_sqarql_frame .sqarql{
+  display: inline-flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 15rpx;
+  border: 2rpx solid gainsboro;
+}
+.test_sqarql_frame image{
+  width: 40rpx;
+  height: 40rpx;
+  margin: 10rpx;
+}
+.sqarql .icon_word{
+  display: inline-flex;
+  align-items: center;
+}
+/*end-成绩查询框架*/
